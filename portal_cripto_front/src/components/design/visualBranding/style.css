@@ -1,0 +1,5 @@
+.visual-branding {
+  display: flex; 
+  align-content: start;
+  justify-content: start;
+}

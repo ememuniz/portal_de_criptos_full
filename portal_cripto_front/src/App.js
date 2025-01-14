@@ -1,5 +1,15 @@
-import React from 'react';
+import './App.css';
 
-const App = () => <p>Portal Cripto</p>
+import VisualBranding from './components/design/visualBranding';
+
+const App = () => {
+  return (
+    <div className="App">
+      <header className = "App-header">
+        <VisualBranding />
+      </header>
+    </div>
+  );
+};
 
 export default App;
