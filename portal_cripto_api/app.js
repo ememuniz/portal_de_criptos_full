@@ -1,14 +1,15 @@
 var createError = require('http-errors');
-var express = require('express');
+const express = require('express');
 var path = require('path');
 var logger = require('morgan');
 require('./config/database');
-var cors = require('cors');
+const cors = require('cors');
+
 
 var usersRouter = require('./app/routes/users');
 var criptoRouter = require('./app/routes/cripto');
 
-var app = express();
+const app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

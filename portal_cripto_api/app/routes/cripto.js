@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 const Cripto = require('../models/cripto');
-const { getCriptos } = require('../../config/ApiCripto.js');
+const { getCriptos } = require('../../config/ApiCripto.js').default;
 const withAuth = require('../middlewares/auth');
 const mongoose = require('mongoose');
 
@@ -109,7 +109,7 @@ router.put('/update/:id', withAuth, async (req, res) => {
       console.log('cripto.author._id', cripto.author._id);
       if (isOwner(req.user, cripto)) {
         let criptoUpdate = await Cripto.findOneAndUpdate(
-          {_id: id},
+          { _id: id },
           {
             $set: {
               name: criptoFind['name'],
@@ -141,7 +141,9 @@ router.put('/update/:id', withAuth, async (req, res) => {
     }
   } catch (error) {
     console.log(error);
-    res.status(500).json({ error: 'Problem to update a note', details: error.message });
+    res
+      .status(500)
+      .json({ error: 'Problem to update a note', details: error.message });
   }
 });
 
@@ -167,12 +169,14 @@ router.delete('/delete/:id', withAuth, async (req, res) => {
     console.log('req.user', req.user);
     if (isOwner(req.user, cripto)) {
       await cripto.deleteOne();
-      res.status(204).json({message: "Cripto deleted"});
+      res.status(204).json({ message: 'Cripto deleted' });
     } else {
-      res.status(403).json({ e: 'Permission denied'});
+      res.status(403).json({ e: 'Permission denied' });
     }
   } catch (e) {
-    res.status(500).json({ e: 'Error in deleting criptos', details: e.message });
+    res
+      .status(500)
+      .json({ e: 'Error in deleting criptos', details: e.message });
   }
 });
 
