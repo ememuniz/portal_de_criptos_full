@@ -1,8 +1,9 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -10,4 +11,200 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.header-intro {
+  height: 4rem;
+  background-color: #f8f9fa;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: start;
+  justify-content: end;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.Home {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.marca {
+  height: 3rem;
+}
+
+.logo {
+  height: 2.5rem;
+}
+
+.menu-intro {
+  height: 4rem;
+  width: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.button-init {
+  height: 80%;
+  cursor: pointer;
+  border-radius: 0px;
+  padding: 10px 20px;
+  margin: 0px;
+}
+
+.marca-navbar{
+  height: 4rem;
+  width: 20rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+  display: flex;
+  width: 80%;
+  padding: 0 20px;
+  z-index: 1001;;
+}
+
+
+
+button {
+  padding: 12px 24px;
+  margin: 16px 0;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+.banner {
+  background-image: url(./assets/images/photos/p3.png);
+  grid-column: 1;
+  grid-row: 1;
+  margin: 4rem 0 0 0;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  text-align: center;
+  padding: 3em 3em;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.title {
+  position: relative;
+  z-index: 2;
+  color: #FCDE5A;
+  font-size: 3em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+h1 {
+  text-align: center;
+  color: #0056b3;
+}
+
+.news-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 16px;
+}
+
+.news-item {
+  border: 1px solid #ddd;
+  padding: 16px;
+  border-radius: 8px;
+  background-color: #fff;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.news-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.news-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.search-form {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+  justify-content: center;
+}
+
+.search-form input {
+  flex: 1;
+  padding : 12px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.search-form button {
+  padding: 12px 24px;
+  font-size: 16px;
+}
+
+.news-details-image {
+  width: 100%;
+  max-width: 800px;
+  height: auto; 
+  margin: 16px 0;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .news-item {
+    padding: 12px;
+  }
+
+  button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .search-form input {
+    font-size: 14px;
+  }
+
+  .search-form button {
+    font-size: 14px;
+  }
 }
