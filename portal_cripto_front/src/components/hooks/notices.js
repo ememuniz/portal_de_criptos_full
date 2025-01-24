@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import NewsItem from '../../container/newsItem';
+import NewsItem from '../container/newsItem';
 
 const Notices = () => {
   const [news, setNews] = useState([]);
@@ -11,15 +11,12 @@ const Notices = () => {
     const fetchNews = async () => {
       setLoading(true);
       try {
-        console.log(searchTerm);
-        console.log(encodeURIComponent(searchTerm))
-        const url = searchTerm
-          ? `http://servicodados.ibge.gov.br/api/v3/noticias?search=${encodeURIComponent(searchTerm)}`
-          : `http://servicodados.ibge.gov.br/api/v3/noticias?page=${page}`;
+        const url = `http://localhost:3001/api/noticias.json`;
         const response = await fetch(url);
         const data = await response.json();
+        console.log(data);
         setNews((prevNews) =>
-          (page === 1 || searchTerm) ? data.items : [...prevNews, ...data.items],
+          (page === 1) ? data.noticias : [...prevNews, ...data.noticias]
         );
       } catch (error) {
         console.error('Erro ao carregar notícias:', error);
@@ -28,24 +25,24 @@ const Notices = () => {
       }
     };
     fetchNews();
-  }, [page, searchTerm]);
+  }, [page]);
 
   return (
     <div>
       <h1>Principais Notícias</h1>
       <div className="news-list">
-        {news.map((item) => (
+        {news.map((item, index) => (
           <NewsItem 
-            key={item.id}
+            key={`${item.id}-${index}`}
             id={item.id}
             title={item.titulo}
-            summary={item.introducao || 'Sem descrição disponível'}
-            image={item.imagem ? JSON.parse(item.imagem).image_intro : null}
+            summary={item.lide || 'Sem descrição disponível'}
+            image={item.imagem ? item.imagem : null}
           />
         ))}
       </div>
-      {!searchTerm && (
-        <button onClick={() => setPage((prevPage) => prevPage + 1)} disabled={loading}>
+      { (
+        <button className='button-more' onClick={() => setPage((prevPage) => prevPage + 1)} disabled={loading}>
           {loading ? 'Carregando...' : 'Carregar mais'}
         </button>
       )}

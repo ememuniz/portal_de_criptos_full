@@ -1,10 +1,15 @@
-import NewsDetail from '../components/structure/details';
+import NewsDetail from '../components/hooks/details'
+import NavbarIntro from '../components/layout/navbarIntro';
+import Banner from '../components/layout/banner';
+import Footer from '../components/layout/footer';
 
 const NewsDetailScreen = () => {
   return (
     <div>
-      <h1>Home</h1>
+      <NavbarIntro />
+      <Banner />
       <NewsDetail />
+      <Footer />
     </div>
   )
 }

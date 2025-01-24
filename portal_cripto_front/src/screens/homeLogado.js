@@ -1,5 +1,5 @@
 import React from 'react';
-import HeaderIntro from '../components/layout/navbarIntro';
+import HeaderIntro from '../components/layout/navbarlogado';
 import Banner from '../components/layout/banner'
 import Notices from '../components/hooks/notices'
 import Footer from '../components/layout/footer'
@@ -16,4 +16,3 @@ const HomeScreen = () => {
 }
 
 export default HomeScreen;
-

@@ -7,6 +7,7 @@ import PerfilScreen from './screens/perfil';
 import NewDetailsScreen from './screens/newDetails';
 import RegisterScreen from './screens/register';
 import LoginScreen from './screens/login';
+import HomeLogadoScreen from './screens/homeLogado';
 
 
 const RoutesInit = () => {
@@ -20,6 +21,7 @@ const RoutesInit = () => {
         <Route path="/perfil" element={<PerfilScreen />} />  
         <Route path="/cadastro" element={<RegisterScreen />} />
         <Route path="/login" element={<LoginScreen />} />
+        <Route path="/home" element={<HomeLogadoScreen />} />
       </Routes>
     </BrowserRouter>
   )
