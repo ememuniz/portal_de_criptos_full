@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import LogoutButton from './buttonLogOut';
 
 const MenuIntro = () => {
   return (
@@ -22,9 +23,7 @@ const MenuIntro = () => {
         </Link>
       </ul>
       
-      <Link to ="/">
-        <button className='button-init'>LogOut</button>
-      </Link>
+      <LogoutButton />
       
     </nav>
   )

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import NewsItem from '../container/newsItem';
+import NewsItem from '../utils/newsItem';
 
 const Notices = () => {
   const [news, setNews] = useState([]);
