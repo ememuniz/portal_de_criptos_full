@@ -11,7 +11,7 @@ const ProtectedRoute = ({ children }) => {
         setIsValid(false);
         return;
       }
-
+      
       try {
         const response = await fetch("http://localhost:3000/users/validate", {
           method: "GET",

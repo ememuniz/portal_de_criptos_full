@@ -1,23 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import PopupDelete from '../components/design/elements/popupDelete';
-import PopupPassword from '../components/design/elements/popupPassword';
-import PopupMessage from '../components/design/elements/popupMessage';
-import { AiOutlineEdit, AiOutlineCheck, AiOutlineDelete, AiOutlineKey} from "react-icons/ai";
-import Profile from '../components/hooks/profile.js';
-import Navbar from '../components/layout/navbarlogado.js'
-import Banner from '../components/layout/banner.js';
+import PopupDelete from '../design/elements/popupDelete';
+import PopupPassword from '../design/elements/popupPassword';
+import PopupMessage from '../design/elements/popupMessage';
 
-const PerfilScreen = () => {
-  return(
-    <fragment>
-      <Navbar />
-      <Banner />
-      <Profile />
-    </fragment>
-  )
-}
-  /*const [userData, setUserData] = useState({});
+const Profile = () => {
+  const [userData, setUserData] = useState({});
   const [editField, setEditField] = useState(null);
   const [newValue, setNewValue] = useState("");
   const [showPopup, setShowPopup] = useState({visible: false, message: ""});
@@ -148,68 +136,71 @@ const PerfilScreen = () => {
   };
   
   return (
-    <div className='profile-container'>
-      <h1>Perfil do Usuário</h1>
-      <div className='profile-data'>
-        {Object.keys(userData).map((key) => 
-          ["_id", "__v", "password"].includes(key) ? null : (
-            <div key={key} className='profile-item'>
-              <p>
-                <strong>{key}: </strong>
-                {editField === key ? (
-                  <input
-                    type='text'
-                    value={newValue}
-                    onChange={(e) => setNewValue(e.target.value)} 
-                  />
-                ):(
-                  userData[key]
-                )}
-              </p>
+    <div className='profile'>
+      <div className='profile-container'>
+        <h1>Perfil do Usuário</h1>
+        <div className='profile-data'>
+          {Object.keys(userData).map((key) => 
+            ["_id", "__v", "password"].includes(key) ? null : (
+              <div key={key} className='profile-item'>
+                <p>
+                  <strong>{key}: </strong>
+                  {editField === key ? (
+                    <input
+                      type='text'
+                      value={newValue}
+                      onChange={(e) => setNewValue(e.target.value)} 
+                    />
+                  ):(
+                    <span>{userData[key]}</span>
+                  )}
+                </p>
 
-              {editField === key ? (
-                <button onClick={handleUpdate}>Ok</button>
-              ):(
-                <button onClick={() => handleEdit(key)}>Editar</button>
-              )}
+                {editField === key ? (
+                  <button onClick={handleUpdate}>Ok</button>
+                ):(
+                  <button onClick={() => handleEdit(key)}>Editar</button>
+                )}
+              </div>
+            )
+          )}
+        </div>
+
+        <div className='profile-actions'>
+          <button onClick={() => setShowPasswordModal(true)} className='change-password-button'>
+            Alterar Senha
+          </button>
+          <button onClick={() => setShowPopup({visible: true, message: "Tem certeza que deseja excluir o perfil?"})} className='delete-profile-button'>
+            Apagar Perfil
+          </button>
+        </div>
+
+        {showPasswordModal && (
+          <div className='popup-background'>
+            <div className='popup-container'>
+              <h3>Alterar Senha</h3>
+              <input
+                type='password'
+                placeholder='Nova senha'
+                onChange={(e) => setPasswordData({ ...passwordData, password: e.target.value })} 
+              />
+              <input
+                type='password'
+                placeholder='Confirmar nova senha'
+                onChange={(e) => setPasswordData({ ...passwordData, confirmPassword: e.target.value })} 
+              />
+              <button onClick={handlePasswordChange}>Alterar</button>
+              <button onClick={() => setShowPasswordModal(false)}>Cancelar</button>
             </div>
-          )
+          </div>
+        )}
+
+        {showPopup.visible && (
+              <PopupDelete message={showPopup.message} onClose={() => setShowPopup({visible: false, message: ""})} onConfirm={handleDeleteProfile} />
         )}
       </div>
-
-      <button onClick={() => setShowPasswordModal(true)} className='change-password-button'>
-        Alterar Senha
-      </button>
-      <button onClick={() => setShowPopup({visible: true, message: "Tem certeza que deseja excluir o perfil?"})} className='delete-profile-button'>
-        Apagar Perfil
-      </button>
-
-      {showPasswordModal && (
-        <div className='popup-background'>
-          <div className='popup-container'>
-            <h3>Alterar Senha</h3>
-            <input
-              type='password'
-              placeholder='Nova senha'
-              onChange={(e) => setPasswordData({ ...passwordData, password: e.target.value })} 
-            />
-            <input
-              type='password'
-              placeholder='Confirmar nova senha'
-              onChange={(e) => setPasswordData({ ...passwordData, confirmPassword: e.target.value })} 
-            />
-            <button onClick={handlePasswordChange}>Alterar</button>
-            <button onClick={() => setShowPasswordModal(false)}>Cancelar</button>
-          </div>
-        </div>
-      )}
-
-      {showPopup.visible && (
-            <PopupDelete message={showPopup.message} onClose={() => setShowPopup({visible: false, message: ""})} onConfirm={handleDeleteProfile} />
-      )}
-
     </div>
   );
-};*/
+};
 
-export default PerfilScreen;
+export default Profile;

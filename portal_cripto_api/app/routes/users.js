@@ -51,6 +51,61 @@ router.put('/update', authMiddleware, async (req, res) => {
   const { field, value } = req.body;
 
   try {
+    if(!["name","email","telephone"].includes(field)){
+      return res.status(400).json({ message: 'O campo informado não pode ser alterado' });
+    }
+
+    const updateUser = await User.findOneAndUpdate(
+      { email },
+      { [field]: value },
+      { new: true }
+    );
+
+    if (!updateUser) {
+      return res.status(404).json({ message: 'Usuário não encontrado' });
+    }
+
+    res.status(200).json({ message: 'Dados atualizados com sucesso' , user: updateUser });
+  } catch (error) {
+    res.status(500).json({ message: 'Erro ao atualizar os dados', error});
+  }
+});
+
+router.put('/update/password', authMiddleware, async (req, res) => {
+  const { email } = req;
+  const { password, confirmPassword } = req.body;
+
+  if (password !== confirmPassword) {
+    return res.status(400).json({ message: 'As senhas devem ser iguais' });
+  }
+
+  if (password.length < 6) {
+    return res.status(400).json({ message: 'A senha deve ter pelo menos 6 caracteres' });
+  }
+
+  try {
+    const user = await User.findOne({ email });
+    if (!user) {
+      return res.status(404).json({ message: 'Usuário não encontrado' });
+    }
+
+    user.password = password;
+    await user.save();
+
+    res.status(200).json({message: 'Senha atualizada com sucesso'});
+  } catch (error) {
+    res.status(500).json({ message: 'Erro ao atualizar a senha', error});
+  }
+});
+
+/*router.put('/update', authMiddleware, async (req, res) => {
+  const { email } = req;
+  const { field, value } = req.body;
+
+  try {
+    if (field === '_id' || field === '__v'){
+      return res.status(400).json({ message: 'O campo _id ou __v nao pode ser alterado' });
+    }
     const updateUser = await User.findOneAndUpdate(
       { email },
       { [field]: value },
@@ -66,7 +121,7 @@ router.put('/update', authMiddleware, async (req, res) => {
   } catch (error) {
     res.status(500).json({ message: 'Erro ao atualizar os dados', error});
   }
-});
+});*/
 
 router.delete('/delete', authMiddleware, async (req, res) => {
   const { email } = req;
@@ -84,5 +139,19 @@ router.delete('/delete', authMiddleware, async (req, res) => {
     res.status(500).json({ message: 'Erro ao deletar o usuário', error});
   }
 })
+
+router.get('/me', authMiddleware, async (req, res) => {
+  try {
+    const user = await User.findOne({ email: req.email }).select('-password');
+    if (!user) {
+      return res.status(404).json({ message: 'Usuário nao encontrado' });
+    }
+
+    res.status(200).json({ user });
+  } catch (error) {
+    console.error("Erro ao obter os dados do usuário:", error);
+    res.status(500).json({e: 'Erro interno do servidor'});
+  }
+});
 
 module.exports = router;
