@@ -24,6 +24,8 @@ router.get('/options', async (req, res) => {
 //! Seleciona a criptomoeda mandada pela interface, procura na API, salva no banco de dados
 router.post('/add', withAuth, async (req, res) => {
   let criptomoeda = req.body;
+  console.log('criptomoeda', criptomoeda);
+  
   let criptoBD;
   let criptoJSON = await getCriptos();
   const criptoFind = criptoJSON.find(

@@ -65,6 +65,13 @@ button:disabled {
   cursor: not-allowed;
 }
 
+.frame {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 2fr));
+  gap: 4rem;
+}
+
+
 .footer {
   background-color: #314A6C;
   height: 10rem;
@@ -150,7 +157,6 @@ h1 {
   align-items: center;
   background-color: #f8f9fa;
   padding: 10px 20px;
-  border-bottom: 2px solid #e0e0e0;
 }
 
 .news-detail {

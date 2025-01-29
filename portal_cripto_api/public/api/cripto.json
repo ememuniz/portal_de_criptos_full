@@ -1,0 +1,726 @@
+{
+  "coins": [
+    {
+      "symbol": "BTC",
+      "show_symbol": "BTC",
+      "name": "Bitcoin",
+      "rank": 1,
+      "price": "100142.123765784",
+      "market_cap": "1984361546801.0756835938",
+      "total_volume_24h": "1108279626.1558513641",
+      "low_24h": "99777.6887377076",
+      "high_24h": "100269.2896723146",
+      "delta_1h": "0,08",
+      "delta_24h": "4,81",
+      "delta_7d": "4,81",
+      "delta_30d": "4,86",
+      "markets": [
+        {
+          "symbol": "EUR",
+          "volume_24h": "2050500",
+          "price": "100142.123765784",
+          "exchanges": [
+            {
+              "name": "Binance",
+              "volume_24h": "1796040",
+              "price": "100014.73"
+            },
+            {
+              "name": "Bitonic",
+              "volume_24h": "157464",
+              "price": "99291.94721"
+            },
+            {
+              "name": "CoinMate",
+              "volume_24h": "3843.71",
+              "price": "100357"
+            }
+          ]
+        },
+        {
+          "symbol": "USDT",
+          "volume_24h": "947290000",
+          "price": "105165.3576809776",
+          "exchanges": [
+            {
+              "name": "Lbank",
+              "volume_24h": "722654000",
+              "price": "104949.15"
+            },
+            {
+              "name": "Binance",
+              "volume_24h": "142149000",
+              "price": "104950.01"
+            },
+            {
+              "name": "HitBTC",
+              "volume_24h": "40706400",
+              "price": "104886.38"
+            }
+          ]
+        },
+        {
+          "symbol": "TRY",
+          "volume_24h": "1073320000",
+          "price": "3762766.5235457998",
+          "exchanges": [
+            {
+              "name": "Paribu",
+              "volume_24h": "1045500000",
+              "price": "3765624.75"
+            },
+            {
+              "name": "Binance",
+              "volume_24h": "27810700",
+              "price": "3750913.3574000001"
+            }
+          ]
+        }
+      ],
+      "last_updated_timestamp": 1737925694
+    },
+    {
+      "symbol": "ETH",
+      "show_symbol": "ETH",
+      "name": "Ethereum",
+      "rank": 2,
+      "price": "3183.8506992393",
+      "market_cap": "389620118832.7106323242",
+      "total_volume_24h": "620687830.4550355673",
+      "low_24h": "3144.2307716908",
+      "high_24h": "3195.2161448323",
+      "delta_1h": "0,36",
+      "delta_24h": "-9,05",
+      "delta_7d": "0,00",
+      "delta_30d": "-14,93",
+      "markets": [
+        {
+          "symbol": "EUR",
+          "volume_24h": "611303",
+          "price": "3183.8506992393",
+          "exchanges": [
+            {
+              "name": "Binance",
+              "volume_24h": "608200",
+              "price": "3172.4811743399"
+            },
+            {
+              "name": "Exmo",
+              "volume_24h": "161.096",
+              "price": "0"
+            }
+          ]
+        },
+        {
+          "symbol": "USDT",
+          "volume_24h": "509968000",
+          "price": "3340.1777685719",
+          "exchanges": [
+            {
+              "name": "Lbank",
+              "volume_24h": "334822000",
+              "price": "3327.7"
+            },
+            {
+              "name": "Binance",
+              "volume_24h": "114304000",
+              "price": "3328.25"
+            },
+            {
+              "name": "Cryptocom",
+              "volume_24h": "35863500",
+              "price": "3327.7"
+            }
+          ]
+        },
+        {
+          "symbol": "XLM",
+          "volume_24h": "269791000",
+          "price": "7750.8343744453",
+          "exchanges": [
+            {
+              "name": "Stellar Decentralized Exchange",
+              "volume_24h": "269791000",
+              "price": "7750.7824428157"
+            },
+            {
+              "name": "Binance",
+              "volume_24h": "331848",
+              "price": "7883.1122690668"
+            },
+            {
+              "name": "HitBTC",
+              "volume_24h": "98985.7",
+              "price": "7784.1775759489"
+            }
+          ]
+        }
+      ],
+      "last_updated_timestamp": 1737925694
+    },
+    {
+      "symbol": "XMR",
+      "show_symbol": "XMR",
+      "name": "Monero",
+      "rank": 20,
+      "price": "211.4328145836",
+      "market_cap": "3900247003.823931694",
+      "total_volume_24h": "1741203.7171043989",
+      "low_24h": "210.0947496186",
+      "high_24h": "214.6322319248",
+      "delta_1h": "-0,16",
+      "delta_24h": "8,97",
+      "delta_7d": "13,76",
+      "delta_30d": "8,81",
+      "markets": [
+        {
+          "symbol": "USDT",
+          "volume_24h": "1400600",
+          "price": "221.8141657797",
+          "exchanges": [
+            {
+              "name": "HitBTC",
+              "volume_24h": "276915",
+              "price": "221.0714"
+            },
+            {
+              "name": "Huobi",
+              "volume_24h": "127142",
+              "price": "224.6"
+            },
+            {
+              "name": "CoinEx",
+              "volume_24h": "981054",
+              "price": "224.56"
+            }
+          ]
+        },
+        {
+          "symbol": "BTC",
+          "volume_24h": "2.05363",
+          "price": "0.0021494831",
+          "exchanges": [
+            {
+              "name": "TradeOgre",
+              "volume_24h": "2.00142",
+              "price": "0.00213748"
+            },
+            {
+              "name": "HitBTC",
+              "volume_24h": "0.0522057",
+              "price": "0.0021077227"
+            },
+            {
+              "name": "CoinEx",
+              "volume_24h": "1.04714",
+              "price": "0.0021396631"
+            }
+          ]
+        },
+        {
+          "symbol": "TUSD",
+          "volume_24h": "4272.12",
+          "price": "225.813722086",
+          "exchanges": [
+            {
+              "name": "HitBTC",
+              "volume_24h": "4272.12",
+              "price": "221.2966"
+            }
+          ]
+        }
+      ],
+      "last_updated_timestamp": 1737925694
+    },
+    {
+      "symbol": "USDT",
+      "show_symbol": "USDT",
+      "name": "Tether",
+      "rank": 3,
+      "price": "0.9531979792",
+      "market_cap": "65065880979.8875274658",
+      "total_volume_24h": "2295704206.5920596123",
+      "low_24h": "1.0493",
+      "high_24h": "1.0481",
+      "delta_1h": "0,00",
+      "delta_24h": "0,17",
+      "delta_7d": "0,17",
+      "delta_30d": "0,17",
+      "markets": [
+        {
+          "symbol": "EUR",
+          "volume_24h": "3754.61",
+          "price": "0.9531979792",
+          "exchanges": [
+            {
+              "name": "Exmo",
+              "volume_24h": "3754.61",
+              "price": "0.95309873"
+            },
+            {
+              "name": "Binance",
+              "volume_24h": "3047790",
+              "price": "0.9531979792"
+            }
+          ]
+        },
+        {
+          "symbol": "BTC",
+          "volume_24h": "0.0000273389",
+          "price": "0.0000095088",
+          "exchanges": [
+            {
+              "name": "YoBit",
+              "volume_24h": "0.0000273389",
+              "price": "0.0000100947"
+            },
+            {
+              "name": "Lbank",
+              "volume_24h": "7441.49",
+              "price": "0.0000095284"
+            },
+            {
+              "name": "Binance",
+              "volume_24h": "1490.83",
+              "price": "0.0000095283"
+            }
+          ]
+        },
+        {
+          "symbol": "ETH",
+          "volume_24h": "149920",
+          "price": "0.0002993853",
+          "exchanges": [
+            {
+              "name": "Lbank",
+              "volume_24h": "97769.1",
+              "price": "0.0003005079"
+            },
+            {
+              "name": "Binance",
+              "volume_24h": "34024",
+              "price": "0.0003004582"
+            },
+            {
+              "name": "Cryptocom",
+              "volume_24h": "10679.6",
+              "price": "0.0003005079"
+            }
+          ]
+        }
+      ],
+      "last_updated_timestamp": 1737925694
+    },
+    {
+      "symbol": "BNB",
+      "show_symbol": "BNB",
+      "name": "Binance Coin",
+      "rank": 4,
+      "price": "652.3962718164",
+      "market_cap": "109691975440.6622009277",
+      "total_volume_24h": "65389423.8052322865",
+      "low_24h": "649.9817160242",
+      "high_24h": "658.0980774265",
+      "delta_1h": "0,21",
+      "delta_24h": "-5,89",
+      "delta_7d": "-3,21",
+      "delta_30d": "-6,09",
+      "markets": [
+        {
+          "symbol": "EUR",
+          "volume_24h": "112305",
+          "price": "652.3962718164",
+          "exchanges": [
+            {
+              "name": "Binance",
+              "volume_24h": "112305",
+              "price": "650.6529406158"
+            }
+          ]
+        },
+        {
+          "symbol": "USDT",
+          "volume_24h": "68282300",
+          "price": "684.4289287626",
+          "exchanges": [
+            {
+              "name": "Lbank",
+              "volume_24h": "54156800",
+              "price": "682.5"
+            },
+            {
+              "name": "Binance",
+              "volume_24h": "8997420",
+              "price": "682.6"
+            },
+            {
+              "name": "HitBTC",
+              "volume_24h": "1181160",
+              "price": "682.61265"
+            }
+          ]
+        },
+        {
+          "symbol": "BTC",
+          "volume_24h": "6.26647",
+          "price": "0.0065081215",
+          "exchanges": [
+            {
+              "name": "Binance",
+              "volume_24h": "5.67398",
+              "price": "0.0065040489"
+            },
+            {
+              "name": "HitBTC",
+              "volume_24h": "0.321276",
+              "price": "0.0065081153"
+            },
+            {
+              "name": "CoinEx",
+              "volume_24h": "0.271211",
+              "price": "0.0065157011"
+            }
+          ]
+        }
+      ],
+      "last_updated_timestamp": 1737925694
+    },
+    {
+      "symbol": "USDC",
+      "show_symbol": "USDC",
+      "name": "USCoin",
+      "rank": 5,
+      "price": "0.9533884696",
+      "market_cap": "27943637096.0583114624",
+      "total_volume_24h": "122714127.6242558509",
+      "low_24h": "0.9532912793",
+      "high_24h": "0.9534829787",
+      "delta_1h": "0,01",
+      "delta_24h": "0,27",
+      "delta_7d": "0,27",
+      "delta_30d": "0,28",
+      "markets": [
+        {
+          "symbol": "USDT",
+          "volume_24h": "79588300",
+          "price": "1.0001998435",
+          "exchanges": [
+            {
+              "name": "Binance",
+              "volume_24h": "46072700",
+              "price": "1.0002"
+            },
+            {
+              "name": "Lbank",
+              "volume_24h": "33391000",
+              "price": "1.0002"
+            },
+            {
+              "name": "Huobi",
+              "volume_24h": "124588",
+              "price": "1.0001"
+            }
+          ]
+        },
+        {
+          "symbol": "BTC",
+          "volume_24h": "144.32",
+          "price": "0.0000095337",
+          "exchanges": [
+            {
+              "name": "HitBTC",
+              "volume_24h": "142.323",
+              "price": "0.0000095337"
+            },
+            {
+              "name": "Luno",
+              "volume_24h": "0.8763",
+              "price": "0.0000095469"
+            },
+            {
+              "name": "Huobi",
+              "volume_24h": "0.791586",
+              "price": "0.0000095281"
+            }
+          ]
+        },
+        {
+          "symbol": "ETH",
+          "volume_24h": "3689.08",
+          "price": "0.0003010778",
+          "exchanges": [
+            {
+              "name": "Binance",
+              "volume_24h": "2683.55",
+              "price": "0.0003014681"
+            },
+            {
+              "name": "HitBTC",
+              "volume_24h": "818.015",
+              "price": "0.0003022826"
+            },
+            {
+              "name": "Luno",
+              "volume_24h": "53.5184",
+              "price": "0.000301135"
+            }
+          ]
+        }
+      ],
+      "last_updated_timestamp": 1737925694
+    },
+    {
+      "symbol": "XRP",
+      "show_symbol": "XRP",
+      "name": "XRP",
+      "rank": 6,
+      "price": "2.9784269716",
+      "market_cap": "138750861114.8812866211",
+      "total_volume_24h": "155363168.541808486",
+      "low_24h": "2.96253737",
+      "high_24h": "2.9949287523",
+      "delta_1h": "0,05",
+      "delta_24h": "28,77",
+      "delta_7d": "43,94",
+      "delta_30d": "27,28",
+      "markets": [
+        {
+          "symbol": "EUR",
+          "volume_24h": "372298",
+          "price": "2.9784269716",
+          "exchanges": [
+            {
+              "name": "Binance",
+              "volume_24h": "372084",
+              "price": "2.9696883043"
+            },
+            {
+              "name": "Exmo",
+              "volume_24h": "214.278",
+              "price": "0"
+            }
+          ]
+        },
+        {
+          "symbol": "USDT",
+          "volume_24h": "98479500",
+          "price": "3.1246677359",
+          "exchanges": [
+            {
+              "name": "Lbank",
+              "volume_24h": "45159700",
+              "price": "3.1151"
+            },
+            {
+              "name": "Binance",
+              "volume_24h": "34938000",
+              "price": "3.1155"
+            },
+            {
+              "name": "HitBTC",
+              "volume_24h": "6839540",
+              "price": "3.115117"
+            }
+          ]
+        },
+        {
+          "symbol": "MXN",
+          "volume_24h": "66419700",
+          "price": "63.7802",
+          "exchanges": [
+            {
+              "name": "Bitso",
+              "volume_24h": "66419700",
+              "price": "63.4094"
+            }
+          ]
+        }
+      ],
+      "last_updated_timestamp": 1737925694
+    },
+    {
+      "symbol": "LUNA",
+      "show_symbol": "LUNA",
+      "name": "Luna",
+      "rank": 7,
+      "price": "0.3315817813",
+      "market_cap": "133534117.2755346149",
+      "total_volume_24h": "3878569.4579991093",
+      "low_24h": "0.3255956655",
+      "high_24h": "0.3321697012",
+      "delta_1h": "0,63",
+      "delta_24h": "-32,72",
+      "delta_7d": "-16,60",
+      "delta_30d": "-50,25",
+      "markets": [
+        {
+          "symbol": "USDT",
+          "volume_24h": "5391740",
+          "price": "0.3478624468",
+          "exchanges": [
+            {
+              "name": "Lbank",
+              "volume_24h": "4650070",
+              "price": "0.344"
+            },
+            {
+              "name": "Binance",
+              "volume_24h": "659158",
+              "price": "0.3443"
+            },
+            {
+              "name": "Huobi",
+              "volume_24h": "42245.1",
+              "price": "0.3451"
+            }
+          ]
+        }
+      ],
+      "last_updated_timestamp": 1737925694
+    },
+    {
+      "symbol": "ADA",
+      "show_symbol": "ADA",
+      "name": "Cardano",
+      "rank": 8,
+      "price": "0.9491852254",
+      "market_cap": "30410091687.2480049133",
+      "total_volume_24h": "44421496.6541105509",
+      "low_24h": "0.930899325",
+      "high_24h": "0.9523614563",
+      "delta_1h": "0,57",
+      "delta_24h": "-9,30",
+      "delta_7d": "15,33",
+      "delta_30d": "-15,19",
+      "markets": [
+        {
+          "symbol": "EUR",
+          "volume_24h": "108273",
+          "price": "0.9491852254",
+          "exchanges": [
+            {
+              "name": "Binance",
+              "volume_24h": "108273",
+              "price": "0.9408064055"
+            }
+          ]
+        },
+        {
+          "symbol": "USDT",
+          "volume_24h": "41528100",
+          "price": "0.99579022",
+          "exchanges": [
+            {
+              "name": "Binance",
+              "volume_24h": "21903300",
+              "price": "0.987"
+            },
+            {
+              "name": "Cryptocom",
+              "volume_24h": "356886",
+              "price": "0.98713"
+            },
+            {
+              "name": "Huobi",
+              "volume_24h": "116180",
+              "price": "0.987359"
+            }
+          ]
+        },
+        {
+          "symbol": "USDC",
+          "volume_24h": "2268970",
+          "price": "0.9981",
+          "exchanges": [
+            {
+              "name": "Binance",
+              "volume_24h": "2268970",
+              "price": "0.9868"
+            }
+          ]
+        }
+      ],
+      "last_updated_timestamp": 1737925694
+    },
+    {
+      "symbol": "DOGE",
+      "show_symbol": "DOGE",
+      "name": "Dogecoin",
+      "rank": 9,
+      "price": "0.3365367373",
+      "market_cap": "41595751917.8577423096",
+      "total_volume_24h": "125782213.2124129385",
+      "low_24h": "0.3333457546",
+      "high_24h": "0.3407095041",
+      "delta_1h": "0,59",
+      "delta_24h": "-8,52",
+      "delta_7d": "11,24",
+      "delta_30d": "-19,64",
+      "markets": [
+        {
+          "symbol": "EUR",
+          "volume_24h": "232467",
+          "price": "0.3365367373",
+          "exchanges": [
+            {
+              "name": "Binance",
+              "volume_24h": "229219",
+              "price": "0.334410447"
+            },
+            {
+              "name": "Exmo",
+              "volume_24h": "3248.01",
+              "price": "0.33675445"
+            }
+          ]
+        },
+        {
+          "symbol": "USDT",
+          "volume_24h": "125431000",
+          "price": "0.3530606911",
+          "exchanges": [
+            {
+              "name": "Lbank",
+              "volume_24h": "97381100",
+              "price": "0.35077"
+            },
+            {
+              "name": "Binance",
+              "volume_24h": "18425600",
+              "price": "0.35083"
+            },
+            {
+              "name": "Huobi",
+              "volume_24h": "432174",
+              "price": "0.351405"
+            }
+          ]
+        },
+        {
+          "symbol": "KRW",
+          "volume_24h": "6414690000",
+          "price": "528.1800843793",
+          "exchanges": [
+            {
+              "name": "Upbit",
+              "volume_24h": "5940230000",
+              "price": "528.1"
+            },
+            {
+              "name": "Coinone",
+              "volume_24h": "371989000",
+              "price": "527"
+            },
+            {
+              "name": "GOPAX",
+              "volume_24h": "102467000",
+              "price": "528"
+            }
+          ]
+        }
+      ],
+      "last_updated_timestamp": 1737925694
+    }
+  ],
+  "remaining": 161
+}
