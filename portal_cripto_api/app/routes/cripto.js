@@ -25,7 +25,7 @@ router.get('/options', async (req, res) => {
 router.post('/add', withAuth, async (req, res) => {
   let criptomoeda = req.body;
   console.log('criptomoeda', criptomoeda);
-  
+
   let criptoBD;
   let criptoJSON = await getCriptos();
   const criptoFind = criptoJSON.find(
@@ -88,10 +88,21 @@ const isOwner = (user, cripto) => {
 router.get('/all', withAuth, async (req, res) => {
   try {
     let criptos = await Cripto.find({ author: req.user._id });
+    console.log('criptosAll', criptos);
+    
     res.status(200).json(criptos);
   } catch (e) {
     res.status(500).json({ e: 'Error in getting criptos' });
   }
+});
+
+router.get('/price', withAuth, async (req, res) => {
+  try {
+    let criptos = await Cripto.find({ author: req.user._id });
+    console.log('criptosAll', criptos);
+    
+    res.status(200).json(criptos);
+  } catch (error) {}
 });
 
 //! Recebe o nome da criptomoeda que vai ser atualizada, busca essa cripto na API, salva os novos dados no Banco de Dados e mostra na tela.
@@ -179,6 +190,15 @@ router.delete('/delete/:id', withAuth, async (req, res) => {
     res
       .status(500)
       .json({ e: 'Error in deleting criptos', details: e.message });
+  }
+});
+
+router.delete('/deleteAll', withAuth, async (req, res) => {
+  try {
+    await Cripto.deleteMany({});
+    res.status(200).json({ message: 'Todas as criptomoedas excluídas com sucesso'})
+  } catch (error) {
+    res.status(500).json({ e: 'Error in deleting criptos', details: e.message });
   }
 });
 
