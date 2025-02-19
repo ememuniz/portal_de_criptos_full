@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import AlertWidget from '../components/hooks/alertWidget';
 import AddAlertPopup from '../components/hooks/addAlertPopup';
+import Navbar from '../components/layout/navbarlogado.js';
+import Banner from '../components/layout/banner.js'; 
+import Footer from '../components/layout/footer.js';
 
 const AlertaScreen = () => {
   const [alerts, setAlerts] = useState([]);
@@ -101,22 +104,28 @@ const AlertaScreen = () => {
 
   return (  
     <div className="alerts-screen">
-      <h1>Alertas</h1>
-      <button onClick={() => setShowPopup(true)}>Adicionar Alerta</button>
-      {showPopup && <AddAlertPopup onClose={() => setShowPopup(false)} onAdd={handleAddAlert} />}
-      <div className="alerts-list">
-        {alerts.map((alert) => (
-          <AlertWidget
-            key={alert._id}
-            alert={alert}
-            onDelete={handleDeleteAlert}
-            onUpdate={(id) => {
-              const updatedAlert = { ...alert, condition: 'greater' }; // Exemplo de atualização
-              handleUpdateAlert(id, updatedAlert);
-            }}
-          />
-        ))}
+      <Navbar />
+      <Banner />
+      <div className='alerts-container'>
+        <div className="alerts-header">
+          <h1>Alertas</h1>
+          <button onClick={() => setShowPopup(true)}>Adicionar Alerta</button>
+        </div>
+        <div className='alerts-card'>
+          {showPopup && <AddAlertPopup onClose={() => setShowPopup(false)} onAdd={handleAddAlert} />}
+          <div className="alerts-list">
+            {alerts.map((alert) => (
+              <AlertWidget
+                key={alert._id}
+                alert={alert}
+                onDelete={handleDeleteAlert}
+                onUpdate={handleUpdateAlert}
+              />
+            ))}
+          </div> 
+        </div>
       </div>
+      <Footer />
     </div>
   );
 }

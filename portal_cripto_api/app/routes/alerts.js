@@ -7,11 +7,6 @@ router.post('/add', authMiddleware, async (req, res) => {
   const { crypto, referenceValue, condition } = req.body;
   const userId = req.user._id;
 
-  console.log('userId', userId);
-  console.log('crypto', crypto);
-  console.log('referenceValue', referenceValue);
-  console.log('condition', condition);
-
   try {
     const newAlert = new Alert({ userId, crypto, referenceValue, condition });
     console.log('newAlert', newAlert);
@@ -40,11 +35,23 @@ router.put('/update/:id', authMiddleware, async (req, res) => {
   const { id } = req.params;
   const { crypto, referenceValue, condition } = req.body;
 
+  console.log('crypto', crypto);
+  console.log('referenceValue', referenceValue);
+  console.log('condition', condition);
+  
+  
+
   try {
-    const updatedAlert = await Alert.findByIdAndUpdate(
-      id,
-      { crypto, referenceValue, condition },
-      { new: true },
+    let updatedAlert = await Alert.findOneAndUpdate(
+      { _id: id },
+      {
+        $set: {
+          crypto: crypto,
+          referenceValue: referenceValue,
+          condition: condition,
+        }
+      },
+      { upsert: true, new: true },
     );
     res.status(200).json(updatedAlert);
   } catch (error) {

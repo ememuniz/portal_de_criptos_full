@@ -7,6 +7,7 @@ import { AiOutlineEdit, AiOutlineCheck, AiOutlineDelete, AiOutlineKey} from "rea
 import Profile from '../components/hooks/profile.js';
 import Navbar from '../components/layout/navbarlogado.js'
 import Banner from '../components/layout/banner.js';
+import Footer from '../components/layout/footer.js';
 
 const PerfilScreen = () => {
   return(
@@ -14,6 +15,7 @@ const PerfilScreen = () => {
       <Navbar />
       <Banner />
       <Profile />
+      <Footer />
     </fragment>
   )
 }

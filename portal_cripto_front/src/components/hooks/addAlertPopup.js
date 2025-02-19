@@ -45,10 +45,10 @@ const AddAlertPopup = ({ onClose, onAdd }) => {
   };
 
   return (   
-    <div className="popup-overlay">
-      <div className="popup-content">
-        <h2>Adicionar Alerta</h2>
-        <form onSubmit={handleSubmit}>
+    <div className="widgets-popup-overlay">
+      <div className="widgets-popup-content">
+        <h1>Adicionar Alerta</h1>
+        <form className='register-form-alert' onSubmit={handleSubmit}>
           <label>
             Criptomoeda:
             <select 
@@ -86,9 +86,11 @@ const AddAlertPopup = ({ onClose, onAdd }) => {
               <option value="greater">Maior que</option>
             </select>
           </label>
-          <button type="submit">Adicionar</button>
+          <div className='register-button-alert'>
+            <button type="submit">Adicionar</button>
+            <button onClick={onClose}>Fechar</button>
+          </div>
         </form>
-        <button onClick={onClose}>Fechar</button>
       </div>
     </div>
   );

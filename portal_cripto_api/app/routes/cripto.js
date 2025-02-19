@@ -98,11 +98,18 @@ router.get('/all', withAuth, async (req, res) => {
 
 router.get('/price', withAuth, async (req, res) => {
   try {
-    let criptos = await Cripto.find({ author: req.user._id });
+    let criptos = [];
+    let criptoJSON = await getCriptos();
+    criptoJSON.forEach((cripto) => {
+      const criptoName = cripto['name'];
+      const criptoPrice = cripto['price'];
+      criptos.push({ name: criptoName, price: criptoPrice });
+    });
     console.log('criptosAll', criptos);
-    
     res.status(200).json(criptos);
-  } catch (error) {}
+  } catch (error) {
+    res.status(500).json({ e: 'Error in getting criptos' });
+  }
 });
 
 //! Recebe o nome da criptomoeda que vai ser atualizada, busca essa cripto na API, salva os novos dados no Banco de Dados e mostra na tela.
@@ -110,16 +117,10 @@ router.put('/update/:id', withAuth, async (req, res) => {
   const { id } = req.params;
   const { name } = req.body;
   let criptoJSON = await getCriptos();
-  console.log('criptoJSON', criptoJSON);
   const criptoFind = criptoJSON.find((cripto) => cripto['name'] === name);
   try {
     if (criptoFind) {
       let cripto = await Cripto.findById(id);
-      console.log('cripto', cripto);
-      console.log('req.user', req.user);
-      console.log('isOwner', isOwner(req.user, cripto));
-      console.log('user._id', req.user._id);
-      console.log('cripto.author._id', cripto.author._id);
       if (isOwner(req.user, cripto)) {
         let criptoUpdate = await Cripto.findOneAndUpdate(
           { _id: id },
