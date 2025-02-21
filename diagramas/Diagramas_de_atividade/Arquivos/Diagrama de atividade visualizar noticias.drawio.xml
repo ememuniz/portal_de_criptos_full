@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36" scale="1" border="0" version="26.0.10">
+  <diagram name="Página-1" id="vpLIR-4YJX5JlvzfC0wn">
+    <mxGraphModel dx="1857" dy="525" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ygMAJSym4Q1tAPk4ojve-4" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" parent="1" source="ygMAJSym4Q1tAPk4ojve-1" target="ygMAJSym4Q1tAPk4ojve-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ygMAJSym4Q1tAPk4ojve-1" value="" style="ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#333333;" parent="1" vertex="1">
+          <mxGeometry x="-827" y="420" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ygMAJSym4Q1tAPk4ojve-2" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#333333;rotation=-90;" parent="1" vertex="1">
+          <mxGeometry x="-55" y="420" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ygMAJSym4Q1tAPk4ojve-6" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="ygMAJSym4Q1tAPk4ojve-3" target="ygMAJSym4Q1tAPk4ojve-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ygMAJSym4Q1tAPk4ojve-3" value="Acessar visualização de notícias" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-760" y="405" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ygMAJSym4Q1tAPk4ojve-8" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="ygMAJSym4Q1tAPk4ojve-5" target="ygMAJSym4Q1tAPk4ojve-7" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ygMAJSym4Q1tAPk4ojve-5" value="Exibir notícias" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="-760" y="520" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ygMAJSym4Q1tAPk4ojve-10" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="ygMAJSym4Q1tAPk4ojve-7" target="ygMAJSym4Q1tAPk4ojve-9" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ygMAJSym4Q1tAPk4ojve-7" value="É selecionada uma notícia" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-600" y="520" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ygMAJSym4Q1tAPk4ojve-12" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="ygMAJSym4Q1tAPk4ojve-9" target="ygMAJSym4Q1tAPk4ojve-11" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ygMAJSym4Q1tAPk4ojve-9" value="Sistema apresenta notícia na íntegra" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="-600" y="405" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ygMAJSym4Q1tAPk4ojve-16" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="ygMAJSym4Q1tAPk4ojve-11" target="ygMAJSym4Q1tAPk4ojve-15" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ygMAJSym4Q1tAPk4ojve-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" parent="1" source="ygMAJSym4Q1tAPk4ojve-11" target="ygMAJSym4Q1tAPk4ojve-5" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-400" y="620" />
+              <mxPoint x="-700" y="620" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ygMAJSym4Q1tAPk4ojve-11" value="" style="rhombus;whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="-440" y="395" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ygMAJSym4Q1tAPk4ojve-13" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Fechar notícia ou continuar navegando?&lt;/font&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" parent="1" vertex="1">
+          <mxGeometry x="-380" y="230" width="160" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="ygMAJSym4Q1tAPk4ojve-14" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="ygMAJSym4Q1tAPk4ojve-11" target="ygMAJSym4Q1tAPk4ojve-13" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-380" y="460" as="sourcePoint" />
+            <mxPoint x="-250" y="401" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ygMAJSym4Q1tAPk4ojve-20" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontSize=12;startSize=8;endSize=8;" parent="1" source="ygMAJSym4Q1tAPk4ojve-15" target="ygMAJSym4Q1tAPk4ojve-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ygMAJSym4Q1tAPk4ojve-15" value="Escolher próxima notícia ou anterior" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-240" y="405" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ygMAJSym4Q1tAPk4ojve-18" value="Fechar" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="-460" y="490" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ygMAJSym4Q1tAPk4ojve-19" value="Continuar navegando" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="-330" y="395" width="60" height="25" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

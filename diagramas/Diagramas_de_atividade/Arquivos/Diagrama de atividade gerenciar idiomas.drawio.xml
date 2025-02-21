@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36" scale="1" border="0" version="26.0.10">
+  <diagram name="Página-1" id="h-maqK44X5sOhHCjHaRt">
+    <mxGraphModel dx="1857" dy="525" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="kthGVAZ1Sjfa7D5EJcpo-4" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="kthGVAZ1Sjfa7D5EJcpo-1" target="kthGVAZ1Sjfa7D5EJcpo-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kthGVAZ1Sjfa7D5EJcpo-1" value="" style="ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#333333;" parent="1" vertex="1">
+          <mxGeometry x="-827" y="420" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="kthGVAZ1Sjfa7D5EJcpo-2" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#333333;rotation=-90;" parent="1" vertex="1">
+          <mxGeometry x="-90" y="420" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="kthGVAZ1Sjfa7D5EJcpo-6" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="kthGVAZ1Sjfa7D5EJcpo-3" target="kthGVAZ1Sjfa7D5EJcpo-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kthGVAZ1Sjfa7D5EJcpo-3" value="Usuário seleciona confugurações" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-740" y="405" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="kthGVAZ1Sjfa7D5EJcpo-8" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="kthGVAZ1Sjfa7D5EJcpo-5" target="kthGVAZ1Sjfa7D5EJcpo-7" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kthGVAZ1Sjfa7D5EJcpo-5" value="Exibir configurações" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-740" y="510" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="kthGVAZ1Sjfa7D5EJcpo-10" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="kthGVAZ1Sjfa7D5EJcpo-7" target="kthGVAZ1Sjfa7D5EJcpo-9" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kthGVAZ1Sjfa7D5EJcpo-7" value="Selecionar alterar idiomas" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-570" y="510" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="kthGVAZ1Sjfa7D5EJcpo-14" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="kthGVAZ1Sjfa7D5EJcpo-9" target="kthGVAZ1Sjfa7D5EJcpo-13" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kthGVAZ1Sjfa7D5EJcpo-9" value="Sistema exibe idiomas disponíveis" style="whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="-570" y="405" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="kthGVAZ1Sjfa7D5EJcpo-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" parent="1" source="kthGVAZ1Sjfa7D5EJcpo-13" target="kthGVAZ1Sjfa7D5EJcpo-5" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-350" y="610" />
+              <mxPoint x="-680" y="610" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kthGVAZ1Sjfa7D5EJcpo-20" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="kthGVAZ1Sjfa7D5EJcpo-13" target="kthGVAZ1Sjfa7D5EJcpo-19" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kthGVAZ1Sjfa7D5EJcpo-13" value="" style="rhombus;whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="-390" y="395" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="kthGVAZ1Sjfa7D5EJcpo-16" value="&lt;span style=&quot;font-size: 15px;&quot;&gt;Manter idioma ou selecionar outro?&lt;/span&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" parent="1" vertex="1">
+          <mxGeometry x="-330" y="230" width="160" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="kthGVAZ1Sjfa7D5EJcpo-17" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="kthGVAZ1Sjfa7D5EJcpo-16" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-330" y="415" as="sourcePoint" />
+            <mxPoint x="-200" y="401" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kthGVAZ1Sjfa7D5EJcpo-18" value="Manter" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
+          <mxGeometry x="-413" y="480" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="kthGVAZ1Sjfa7D5EJcpo-21" value="" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="kthGVAZ1Sjfa7D5EJcpo-19" target="kthGVAZ1Sjfa7D5EJcpo-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kthGVAZ1Sjfa7D5EJcpo-19" value="É mudado o idioma do sistema" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-260" y="405" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
