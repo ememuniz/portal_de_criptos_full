@@ -1,0 +1,49 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="25.0.3">
+  <diagram name="Página-1" id="1cbsp847_dYvQ5A0gbAo">
+    <mxGraphModel dx="880" dy="468" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="x0wBZL2Fk6DeMSG35ydD-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="x0wBZL2Fk6DeMSG35ydD-1" target="x0wBZL2Fk6DeMSG35ydD-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="x0wBZL2Fk6DeMSG35ydD-1" value="Usuário" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
+          <mxGeometry x="40" y="680" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="x0wBZL2Fk6DeMSG35ydD-2" value="Visualizar notícias" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="120" y="680" width="90" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="x0wBZL2Fk6DeMSG35ydD-9" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="x0wBZL2Fk6DeMSG35ydD-3" target="x0wBZL2Fk6DeMSG35ydD-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="x0wBZL2Fk6DeMSG35ydD-11" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="x0wBZL2Fk6DeMSG35ydD-9" vertex="1" connectable="0">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2" y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="x0wBZL2Fk6DeMSG35ydD-3" value="Exibir conteudo completo" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="270" y="640" width="90" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="x0wBZL2Fk6DeMSG35ydD-10" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="x0wBZL2Fk6DeMSG35ydD-4" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="209.9999999999999" y="710" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="x0wBZL2Fk6DeMSG35ydD-12" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="x0wBZL2Fk6DeMSG35ydD-10" vertex="1" connectable="0">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="x0wBZL2Fk6DeMSG35ydD-4" value="Navegar entre notícias" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="270" y="730" width="90" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="XP2mWD-ivQ1mz_QYvnUy-1" value="Visualizar Noticias" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="100" y="590" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="XP2mWD-ivQ1mz_QYvnUy-2" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="100" y="620" width="290" height="190" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
